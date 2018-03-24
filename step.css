@@ -1,0 +1,226 @@
+#content{
+    margin:15px auto;
+    text-align:center;
+    width:600px;
+    position:relative;
+    height:100%;
+}
+#wrapper{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:2px solid #fff;
+    background-color:#f9f9f9;
+    width:800px;
+    overflow:hidden;
+}
+.alldiv{
+    width: 800px;
+    overflow: hidden;
+}
+#steps{
+    width:800px;
+    /*height:320px;*/
+    overflow:hidden;
+}
+.step{
+    float:left;
+    width:800px;
+    /*height:320px;*/
+}
+#navigation{
+	text-align: center;
+}
+#navigation ul{
+    list-style:none;
+	padding: 0;
+	display: inline-block;
+}
+#navigation ul li{
+    float:left;
+    position:relative;
+}
+#navigation ul li a{
+	text-align: left;
+    display:block;
+	width: 160px;
+    height:44px;
+    background: url(images/step.png) no-repeat;
+    color:#7f1817;
+    outline:none;
+    font-weight:bold;
+    text-decoration:none;
+    line-height: 18px;
+    padding:8px 0 0 18px;
+	text-transform: uppercase;
+}
+#navigation ul li a span{
+	color: #B52917;
+	display: inline-block;
+	font-weight: normal;
+	text-transform: none;
+}
+#navigation ul li a:hover,
+#navigation ul li.selected a{
+    background: url(images/step-hover.png) no-repeat;
+    color:#fff;
+}
+#navigation ul li a:hover span,
+#navigation ul li.selected a span{
+    color: #fff;
+}
+#navigation ul li:first-child a{
+	background: url(images/step-first.png) no-repeat;
+	border-radius: 5px 0 0 5px;
+}
+#navigation ul li:first-child a:hover,
+#navigation ul li.selected:first-child a{
+    background: url(images/step-hover-first.png) no-repeat;
+	border-radius: 5px 0 0 5px;
+}
+#navigation ul li:last-child a{
+	background: url(images/step-last.png) no-repeat;
+	border-radius: 0 5px 5px 0;
+}
+#navigation ul li:last-child a:hover,
+#navigation ul li.selected:last-child a{
+    background: url(images/step-hover-last.png) no-repeat;
+	border-radius: 0 5px 5px 0;
+}
+span.checked{
+    background:transparent url('../images/checked.png') no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+span.error{
+    background:transparent url('../images/error.png') no-repeat top left;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+#steps form fieldset{
+    border:none;
+    padding-bottom:20px;
+}
+#steps form legend{
+    text-align:left;
+    background-color:#f0f0f0;
+    color:#666;
+    font-size:24px;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+    float:left;
+    width:590px;
+    padding:5px 0px 5px 10px;
+    margin:10px 0px;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #d9d9d9;
+}
+#steps form p{
+    float:left;
+    clear:both;
+    margin:5px 0px;
+    background-color:#f4f4f4;
+    border:1px solid #fff;
+    width:400px;
+    padding:10px;
+    margin-left:100px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+}
+#steps form p label{
+    width:160px;
+    float:left;
+    text-align:right;
+    margin-right:15px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+#steps form input:not([type=radio]),
+#steps form textarea,
+#steps form select{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 200px;
+    float:left;
+}
+#steps form input:focus{
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background-color:#FFFEEF;
+}
+#steps form p.submit{
+    background:none;
+    border:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+#steps form button {
+    border:none;
+    outline:none;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    display: block;
+    cursor:pointer;
+    margin: 0px auto;
+    clear:both;
+    padding: 7px 25px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:"Century Gothic", Helvetica, sans-serif;
+    font-size:22px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#4797ED;
+}
+#steps form button:hover {
+    background:#d8d8d8;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+span.reference{
+    position:fixed;
+    left:5px;
+    top:5px;
+    font-size:10px;
+    text-shadow:1px 1px 1px #fff;
+}
+span.reference a{
+    color:#555;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+span.reference a:hover{
+    color:#000;
+
+}
+h1{
+    color:#ccc;
+    font-size:36px;
+    text-shadow:1px 1px 1px #fff;
+    padding:20px;
+}
